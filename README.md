@@ -52,6 +52,20 @@ src/
 ├── utils/           # Utility functions
 └── App.jsx          # Main application component
 ```
+## screenshots
+### HOME PAGE
+![Home Page](Screenshot/homepage.png) -Light Mode
+![Home Page](Screenshot/homepage_dark.png) -Dark Mode
+
+### TASKS PAGE
+![Tasks Page](Screenshot/taskspage.png) -Light Mode
+![Tasks Page](Screenshot/taskspage_dark.png) -Dark Mode
+
+### ABOUT PAGE
+![About Page](Screenshot/aboutpage.png) -Light Mode
+![About Page](Screenshot/aboutpage_dark.png) -Dark Mode
+
+
 
 ## Submission
 
