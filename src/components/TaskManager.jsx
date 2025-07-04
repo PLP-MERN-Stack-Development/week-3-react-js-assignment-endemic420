@@ -71,8 +71,8 @@ const TaskManager = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-      <h2 className="text-2xl font-bold mb-6">Task Manager</h2>
+    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6">
+      <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">Task Manager</h2>
 
       {/* Task input form */}
       <form onSubmit={handleSubmit} className="mb-6">
@@ -82,7 +82,7 @@ const TaskManager = () => {
             value={newTaskText}
             onChange={(e) => setNewTaskText(e.target.value)}
             placeholder="Add a new task..."
-            className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600"
+            className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-900 dark:border-gray-600"
           />
           <Button type="submit" variant="primary">
             Add Task
@@ -116,16 +116,16 @@ const TaskManager = () => {
       </div>
 
       {/* Task list */}
-      <ul className="space-y-2">
+      <ul className="space-y-2 shadow-sm rounded-sm ">
         {filteredTasks.length === 0 ? (
-          <li className="text-gray-500 dark:text-gray-400 text-center py-4">
+          <li className="text-00 dark:text-gray-400 text-center py-4">
             No tasks found
           </li>
         ) : (
           filteredTasks.map((task) => (
             <li
               key={task.id}
-              className="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 dark:border-gray-700"
+              className="flex items-center justify-between p-3 shadow-sm rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <div className="flex items-center gap-3">
                 <input
